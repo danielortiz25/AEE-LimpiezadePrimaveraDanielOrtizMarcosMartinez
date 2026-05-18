@@ -5,10 +5,10 @@
 public class FacturacionLegacy {
 
     // Método a refactorizar
-    public double calcularTotal(double importeBase, int tipoCliente, boolean dV) {
+    public double calcularTotal(double importeBase, int tipoCliente, boolean esSocioVip) {
         if (importeBase > 0) {
             if (tipoCliente == 1) {
-                if (dV == true)
+                if (esSocioVip == true)
                     return importeBase - (importeBase * 0.25);
                 else
                     return importeBase - (importeBase * 0.15);
