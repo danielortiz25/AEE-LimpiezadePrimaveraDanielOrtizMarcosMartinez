@@ -36,14 +36,16 @@ Esta implementación nos hace más complejo seguir el comportamiento del código
 2. **Extracción de Constantes.** Selecciona los números mágicos (0.25, 0.15, etc.) y usa la herramienta de extracción del IDE para crear constantes private static final en la parte superior de la clase. Usa nombres autoexplicativos como DESCUENTO\_VIP o DESCUENTO\_ESTANDAR.  
 - Ahora añadimos:
 
-![][image1]
+![Captura del proyecto](img/constantes.png)
+
 
 3. **Cláusulas de Guarda (*Guard Clauses*).** Modifica la estructura de control para "aplanar" el código. Invierte las condiciones lógicas y utiliza retornos tempranos (return) para eliminar **todos** los bloques “*else”*.  
    * *Ejemplo conceptual:* En lugar de if (importe \> 0\) { ... } else { return 0; }, cambiadlo a if (importe \<= 0\) return 0; en la primera línea.
 
 - Para modificar la estructura de control, lo hemos aplanado dándole la vuelta a los if y quitando los else:
 
-![][image2]
+![Captura del proyecto](img/estructuraDeControl.png)
+
 
 Fase 3: Verificación, Documentación y Entrega
 
