@@ -5,7 +5,7 @@
 public class FacturacionLegacy {
 
     // Método a refactorizar
-    public double cT(double m, int tC, boolean dV) {
+    public double calcularTotal(double m, int tC, boolean dV) {
         if (m > 0) {
             if (tC == 1) {
                 if (dV == true)
